@@ -1,0 +1,15 @@
+//登录
+export const LOGIN_CONSTANT = 'LOGIN_CONSTANT'
+export type LOGIN_CONSTANT = typeof LOGIN_CONSTANT
+
+//退出登录
+export const LOGIN_OUT_CONSTANT = 'LOGIN_OUT_CONSTANT'
+export type LOGIN_OUT_CONSTANT = typeof LOGIN_OUT_CONSTANT
+
+//注册
+export const REGISTER_CONSTANT = 'REGISTER_CONSTANT'
+export type REGISTER_CONSTANT = typeof REGISTER_CONSTANT
+
+//登录错误信息
+export const LOGIN_ERROR = 'LOGIN_ERROR'
+export type LOGIN_ERROR = typeof LOGIN_ERROR

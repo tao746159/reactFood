@@ -1,0 +1,51 @@
+@import '../../stylus/color.styl'
+.login
+  position: absolute
+  width: 100%
+  height 100%
+  background: #f7f7f7
+  left 0
+  top: 0
+  z-index 2
+  overflow hidden
+  .login-top
+    margin-top: 3rem
+    text-align: center
+    img 
+      width: 6rem
+  .login-tab
+    margin : 2rem auto 0
+    display: flex
+    border-radius: .3rem
+    width: 12rem
+    text-align: center
+    border: 1px solid $color_green
+    a
+      padding: .3rem
+      display: block
+      background: #ffffff
+      width: 100%
+      text-align: center
+      border-radius: .3rem
+    a:first-child
+      border-radius: .3rem 0 0 .3rem
+    a:last-child
+      border-radius: 0 .3rem .3rem 0 
+    a.active
+      background: $color_green
+      color: #ffffff
+  .login-tab-cont
+    // margin-top: 2rem
+    padding: 2rem
+    li
+      margin-bottom: 1.5rem
+  .login-tab-phone,.login-tab-email
+    display: block
+  .login-tab-phone.hide,.login-tab-email.hide
+    display: none
+  .loing-register
+    text-align: right 
+    margin: 1rem 1rem 0 0
+    a
+      text-decoration: none
+      color: $color_green

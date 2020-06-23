@@ -1,0 +1,76 @@
+.tab-bar
+  height 40px
+  position:  fixed
+  width: 100%
+  bottom: 0
+  display: flex
+  justify-content: space-around
+  color: #ffffff
+  
+.tab-bar {
+  display: flex;
+}
+
+
+
+.tab-bar .home_icon {
+  background: url(./../../image/tarbar/home.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .home_icon_active {
+  background: url(./../../image/tarbar/home_active.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .sort_icon {
+  background: url(./../../image/tarbar/sort.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .sort_icon_active {
+  background: url(./../../image/tarbar/sort_active.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .shiyouq_icon {
+  background: url(./../../image/tarbar/shiyouq.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .shiyouq_icon_active {
+  background: url(./../../image/tarbar/shiyouq_active.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .my_icon {
+  background: url(./../../image/tarbar/my.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar .my_icon_active {
+  background: url(./../../image/tarbar/my_active.png) center center / 21px 21px no-repeat;
+}
+
+.tab-bar-item {
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.tab-bar-item a {
+  display: block;
+  text-decoration: none;
+  color: #bfbfbf;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.tab-bar-item a.active {
+  color: #ffffff;
+}
+
+.tab-bar-item .tab-title {
+  position: relative;
+  top: -4px;
+  font-size: 12px;
+}
+
+.tab-bar-item span:first-child {
+  width: 18px;
+  height: 18px;
+  margin: 4px auto 0;
+
+  display: block;
+}
