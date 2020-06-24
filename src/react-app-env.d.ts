@@ -65,3 +65,5 @@ declare module '*.module.sass' {
   export default classes;
 }
 declare module 'redux-logger'
+declare module 'iscroll/build/iscroll-probe'
+declare module 'iscroll-luo'

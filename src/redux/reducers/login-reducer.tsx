@@ -12,6 +12,8 @@ export const loginReducer = (state = initState, action: loginface) => {
   switch (action.type) {
     case LOGIN_CONSTANT:
       return { ...state, isAuth: true, msg: '', action }
+    case REGISTER_CONSTANT:
+      return { ...state, msg: '', redirectTo: '/login' }
     default:
       return state
   }

@@ -7,6 +7,7 @@ import './index.styl'
 import RTinput from '../../RFUI/form/RFinput/RFinput'
 import RTbtton from '../../RFUI/form/RFbutton/RFbutton'
 import { Link, withRouter, Redirect } from 'react-router-dom'
+
 const loginImg = require('../../image/other/weixiao.png')
 const loginpassImg = require('../../image/other/qinzui.png')
 
@@ -14,7 +15,6 @@ interface Props {
   login: Function,
   state: any,
   location: any,
-
   history: any
 }
 
@@ -30,8 +30,6 @@ function Login(props: Props): ReactElement {
     }
   }
 
-
-
   return (
     <div className="login">
       {props.state.login.isAuth ? <Redirect to={props.location.state ? props.location.state.from : '/'} /> : ''}
@@ -40,15 +38,17 @@ function Login(props: Props): ReactElement {
         <img src={loginImg} alt="" />
       </div>
       <div className="login-content">
+
         <div className="login-tab-cont">
           <div className='login-tab-phone'>
+
             <form>
               <ul>
                 <li>
-                  <RTinput placeholder="请输入手机号或邮箱" value={username} handleNameChange={(value: any) => { setActive(username = value) }} rule={['username', { require: true, message: '用户名不能为空' }]}></RTinput>
+                  <RTinput placeholder="请输入手机号或邮箱" value={username} handleNameChange={(value: any) => { setActive(username = value) }} ></RTinput>
                 </li>
                 <li>
-                  <RTinput type="password" value={password} rule={['password', { require: true, message: '密码不能为空' }]} placeholder="请输入密码" handleNameChange={(value: any) => { setPassword(password = value) }}></RTinput>
+                  <RTinput type="password" value={password} placeholder="请输入密码" handleNameChange={(value: any) => { setPassword(password = value) }}></RTinput>
                 </li>
                 <li>
                   <RTbtton type="green" onNickBtn={handleOnsumit}>登 录</RTbtton>

@@ -150,7 +150,11 @@
     ]
   },
   "devDependencies": {
+    "@types/iscroll": "^5.2.4",
     "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "iscroll": "^5.2.0",
+    "iscroll-luo": "^1.2.3",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"
   }

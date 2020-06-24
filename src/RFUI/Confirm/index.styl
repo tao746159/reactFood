@@ -1,0 +1,31 @@
+.confirm
+  position: fixed
+
+  left: 50%
+  min-width 10rem
+  height 2rem
+  background: #000000
+  background-color: rgba(0,0,0,0.5);
+  display: flex
+  justify-content: center
+  align-items: center
+  transform:translateX(-50%);  
+  z-index 1
+  color: #ffffff
+  padding: 0 .5rem
+  border-radius: .3rem
+  font-size: .75rem
+  img 
+    max-width 1.5rem
+.confirm.success
+  background: rgba(103,194,58,.5)
+  color: #236700
+.confirm.warning
+  background: rgba(250,236,216,.5)
+  color: #e6a23c
+.confirm.error
+  background: rgba(253,226,226,.5)
+  color: #f56c6c
+.confirm.info
+  background: rgba(237,242,252,.5)
+  color: #909399
