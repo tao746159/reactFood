@@ -79,9 +79,11 @@ export default function Home({ }: Props): ReactElement {
   }, [])
 
   const handleGetHomelist = () => {
-    axios.get('').then(res => {
-      if (res.data.code === 200) {
-        setList(list = res.data.list)
+    axios.get('http://localhost:3002/api/homelist').then((res: any) => {
+      const data = res.data
+      if (data.code === 200) {
+
+        setList(list = data.list)
       }
     })
   }

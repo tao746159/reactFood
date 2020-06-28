@@ -8,12 +8,13 @@ interface Props {
 }
 
 const RouterInit = (props: Props): ReactElement => {
-  const isAuth = sessionStorage.getItem('username')
+
   return (
     <div>
       {
         Routes.map((item, index) => {
           return <Route key={index} path={item.path} exact component={(props: any): ReactElement => {
+            const isAuth = sessionStorage.getItem('username')
             if (arr.some((tom) => tom === item.path) || isAuth) {
               return <item.component {...props} />
             } else {

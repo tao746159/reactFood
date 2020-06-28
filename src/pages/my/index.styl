@@ -1,0 +1,98 @@
+@import './../../stylus/color.styl'
+.my
+  position absolute
+  width 100%
+  height 100%
+  overflow hidden
+  .my-top
+    height 4rem
+    overflow hidden
+    background-image url('./../../image/swipe/hb_03.jpg')
+    background-size 300%
+    display flex
+    padding 2rem
+    .avatar
+      width 4rem
+      height 4rem
+      border-radius 3rem
+      text-align center
+      overflow hidden
+      img
+        max-width 180%
+    .my-name
+      line-height 4rem
+      margin-left 2rem
+  .my-container
+    padding 1rem 0
+    background $color_grayF8
+    height 100%
+    li
+      border-bottom 1px solid #bfbfbf
+      padding 0.5rem 1rem
+      background #ffffff
+      margin-bottom 0.5rem
+      display flex
+      a
+        text-decoration none
+        font-size 14px
+        color $color_gray
+        display block
+        width 100%
+        div
+          display flex
+          justify-content space-between
+  .child-container
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+    background #bfbfbf
+    z-index 1
+    transition 0.5s
+    transform translate3d(100%, 0, 0)
+  .child-container.active
+    transform translate3d(0, 0, 0)
+  .account, .keep, .order
+    margin-top 2rem
+    position absolute
+    width 100%
+    transform translate3d(100%, 0, 0)
+  .account.active, .keep.active, .order.active
+    transform translate3d(0, 0, 0)
+  .keep, .order
+    box-sizing border-box
+    align-content flex-start
+    li
+      width 100%
+      padding 0.5rem
+      display flex
+      div
+        width 8rem
+        padding 0.5rem
+        img
+          max-width 100%
+        .price
+          font-size 0.75rem
+          margin-top 0.5rem
+      .del
+        width auto
+        display flex
+        img
+          width 1.25rem
+          height 1.25rem
+          margin-top 2rem
+  .order
+    .order-top ul
+      display flex
+      width 100%
+      li
+        width auto
+        justify-content space-around
+        flex 0 0 33.33%
+        text-align center
+        box-sizing border-box
+      li.active
+        background $color_green
+        a
+          color #ffffff

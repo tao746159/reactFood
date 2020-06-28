@@ -1,0 +1,85 @@
+@import '../../stylus/color.styl'
+.search-top
+  position: fixed
+  width: 100%
+  height 8rem
+  background: #f7f7f7
+.search-con
+  margin-top: 8rem
+.search-warp
+  
+  .search.icon
+    position: relative
+  .search
+    padding 1rem
+    margin-top 2rem
+    display flex
+    height 2rem
+    .input-warp
+      width: 100%
+      position relative
+      input
+        width 100%
+        border 1px solid $color_green
+        outline none
+        height 1.75rem
+    a.btn-text
+      display inline-block
+      width 4rem
+      text-align center
+      line-height 2rem
+      background $color_green
+      border 1px solid $color_green
+      color #ffffff
+    a.btn-img
+      position: absolute
+      right: 1.5rem
+      top: 1.25rem
+      img 
+        max-width 1.5rem
+    a.btn-clear
+      position: absolute
+      right: .3rem
+      top: .5rem
+      font-size: .75rem
+      color: $color_green
+    a.btn-clear.hide
+      display: none
+
+.search-list
+  padding: 0rem 1rem 1rem
+  font-size: .75rem
+  display: flex
+  .pop-list
+    ul
+      display: flex
+      li
+        margin: 0 .14rem
+
+.search-sort
+  background: #F7F7F7
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+.searchList
+  padding: 1rem
+  margin-bottom: 2rem
+  li
+    display: flex
+    margin-bottom: 1rem
+    div
+      margin-right: 1rem
+    .searchList-image-warp
+      width: 6rem
+      img 
+        max-width 100%
+    .search-synopsis
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      width: 8.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
